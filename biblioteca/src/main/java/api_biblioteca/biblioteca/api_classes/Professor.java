@@ -16,7 +16,7 @@ public class Professor{
     private String cpfProf;
     @Column(name = "status")
     private int status;
-    @OneToOne
+    @OneToOne 
     @JoinColumn(name = "usuario_login", referencedColumnName = "login")
     private Usuario usuario;
   

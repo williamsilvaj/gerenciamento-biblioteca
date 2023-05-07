@@ -8,4 +8,6 @@ import api_biblioteca.biblioteca.api_classes.Professor;
 
 public interface RepositorioProfessor extends CrudRepository<Professor, String>{
     List<Professor> findAll();
+
+    /*Professor findByMatProfessor(String professor_mat);*/
 }

@@ -8,4 +8,6 @@ import api_biblioteca.biblioteca.api_classes.Usuario;
 
 public interface RepositorioUsuario extends CrudRepository<Usuario, String>{
     List<Usuario> findAll();
+    
+    Usuario findByLogin(String login);
 }
