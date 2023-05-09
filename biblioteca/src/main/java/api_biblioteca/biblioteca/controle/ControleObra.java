@@ -17,7 +17,7 @@ public class ControleObra {
 	@Autowired
 	private RepositorioObra obraRep;
 
-	@GetMapping("/getObras")
+	@GetMapping("/getObra")
 	public List<Obra> getObras() {
 		return (List<Obra>) obraRep.findAll();
 	}
